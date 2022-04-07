@@ -1,0 +1,154 @@
+@import url("https://cdn.jsdelivr.net/gh/GoCloudHub/font-amazon-ember/fonts/amazonember/amazonember.css");
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: "Amazon Ember", Arial, monospace;
+}
+
+a{
+    color: rgb(20, 110, 180);
+    text-decoration: none;
+}
+
+a:visited{
+    color: rgb(20, 110, 180);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 0;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50vh;
+    width: 25vw;
+    border: 1px solid lightgray;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+    color:rgb(20, 110, 180);
+}
+
+#email, #password{
+    margin-top: 1vh;
+    width: 25vw;
+}
+
+#password_label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#collapsible{
+    display: none;
+}
+
+.toggle{
+    color:rgb(20, 110, 180);
+    margin: 0;
+}
+
+.toggle:hover, a:hover{
+    text-decoration: underline
+}
+
+.toggle::before{
+    content: " ";
+}
+
+.content{
+    max-height: 0vh;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .toggle + .content{
+    max-height: 10vh;
+}
+
+.content_inner li{
+    list-style-type: none;
+    margin: 2px;
+}
+
+#submit{
+    width: 25vw;
+    background-color: rgb(255, 153, 0);
+    border: 1px solid black;
+}
+
+h3{
+    font-size: .8em;
+    height: 10px;
+    font-weight: lighter;
+}
+
+h3 span{
+    position:relative;
+}
+
+h3 span:before, h3 span:after{
+    border-top: 1px solid black;
+    content:"";
+    position: absolute;
+    top: 7px;
+    right: 11em;
+    width: 7vw;
+}
+
+h3 span:after{
+    position: absolute;
+    top: 7px;
+    left: 11em;
+}
+
+#create{
+    width: 25vw;
+    margin-bottom: 3vh;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: .75em
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 3vh;
+}
+
+footer li{
+    display: inline;
+    text-align: center;
+}
+
+footer li:nth-child(1), li:nth-child(2){
+    margin-right: 2vw
+}
+
