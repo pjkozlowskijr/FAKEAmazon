@@ -33,7 +33,7 @@ main form{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 50vh;
+    height: 60vh;
     width: 25vw;
     border: 1px solid lightgray;
     padding-left: 20px;
@@ -60,36 +60,39 @@ p{
     justify-content: space-between;
 }
 
-#collapsible{
+#checkbox{
     display: none;
+}
+
+#arrow{
+    display: inline-block;
+    transform: rotate(0deg)
 }
 
 .toggle{
     color:rgb(20, 110, 180);
-    margin: 0;
 }
 
 .toggle:hover, a:hover{
     text-decoration: underline
 }
 
-.toggle::before{
-    content: " ";
-}
-
 .content{
     max-height: 0vh;
     overflow: hidden;
-    transition: max-height .25s ease-in-out;
 }
 
-.toggle:checked + .toggle + .content{
+.content li{
+    list-style-type: none;
+    margin: 2px;
+}
+
+.toggle:checked + .content{
     max-height: 10vh;
 }
 
-.content_inner li{
-    list-style-type: none;
-    margin: 2px;
+.toggle:checked + #arrow{
+    transform: rotate(90deg);
 }
 
 #submit{
