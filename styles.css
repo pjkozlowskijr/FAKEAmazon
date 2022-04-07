@@ -105,7 +105,7 @@ h1{
 }
 
 .collapsible > #checkbox:checked ~ .content{
-    height: 8vh;
+    height: 10vh;
 }
 
 .content ul{
