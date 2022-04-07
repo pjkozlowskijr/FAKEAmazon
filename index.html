@@ -17,18 +17,18 @@
                 <label for="email">Email (phone for mobile accounts)</label>
                 <input id="email" type="email">
             </div>
-            
             <div>
                 <div id="password_label">
                     <label for="password">Password</label>
-                    <a href="https://www.amazon.com/ap/forgotpassword?showRememberMe=true&openid.pape.max_auth_age=0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&prevRID=0TBYZ9X6HK0RZZ0K69QR&openid.assoc_handle=usflex&openid.mode=checkid_setup&prepopulatedLoginId=eyJjaXBoZXIiOiJPdmNlNVdIcHptUWVpTXdteENkdjZSWjVySVo4ajFKMkt0NWJiT2szcjhrPSIsInZlcnNpb24iOjEsIklWIjoiVUgwRnhlMjlvam1oWDRCNHJ0OXcxUT09In0%3D&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&timestamp=1649295634000">Forgot Password</a>
+                    <a href="#">Forgot Password</a>
                 </div>
                 <input id="password" type="text">
             </div>
             <input id="submit" type="submit" value="Continue">
-            <div id="collapsible">
-                <label for="checkbox" class="toggle"><span id="arrow">&#10148;&nbsp</span>Need help?</label>
-                <input id="checkbox" class="toggle" type="checkbox">
+            <div class="collapsible">
+                <input type="checkbox" id="checkbox">
+                <span id="arrow">&#10148;&nbsp</span>
+                <label for="checkbox">Need help?</label>
                 <div class="content">
                     <ul>
                         <li><a href="#">Other issues with sign-in</a></li>
@@ -39,7 +39,6 @@
         </form>
        
         <h3><span>New to Moneyzgone?</span></h3>
-        
         <input id="create" type="submit" value="Create your Moneyzgone account">
     </main>
 
@@ -51,7 +50,7 @@
             <li><a href="#">Privacy Notice</a></li>
             <li><a href="#">Help</a></li>
         </ul>
-        &copy 2022 | Moneyzgone.com and it's affiliates
+        <p>&copy 2022 | Moneyzgone.com and it's affiliates</p>
     </footer>
 
 </body>

@@ -1,4 +1,8 @@
+/* Import Amazon font */
+
 @import url("https://cdn.jsdelivr.net/gh/GoCloudHub/font-amazon-ember/fonts/amazonember/amazonember.css");
+
+/* Styling for entire document*/
 
 body, html{
     width: 100vw;
@@ -15,6 +19,10 @@ a{
 
 a:visited{
     color: rgb(20, 110, 180);
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 main{
@@ -47,7 +55,6 @@ h1{
 
 p{
     margin: 0;
-    color:rgb(20, 110, 180);
 }
 
 #email, #password{
@@ -63,43 +70,39 @@ p{
     justify-content: space-between;
 }
 
-#checkbox{
+.collapsible #checkbox{
     display: none;
 }
 
 #arrow{
-    display: inline-block;
-    transform: rotate(0deg)
-}
-
-.toggle{
     color:rgb(20, 110, 180);
+    display: inline-block;
 }
 
-.toggle:hover, a:hover{
-    text-decoration: underline
-}
-
-.content{
-    max-height: 0vh;
+.collapsible .content{
     overflow: hidden;
+    height: 0;
+}
+
+.collapsible label{
+    color:rgb(20, 110, 180)
+}
+
+.collapsible label:hover{
+    text-decoration: underline;
+}
+
+#checkbox:checked ~ #arrow{
+    transform: rotate(90deg);
+}
+
+.collapsible > #checkbox:checked ~ .content{
+    height: 8vh;
 }
 
 .content ul{
-    margin-bottom: 0;
-}
-
-.content li{
     list-style-type: none;
-    margin: 2px;
-}
-
-.toggle:checked + .content{
-    max-height: 10vh;
-}
-
-.toggle:checked + .toggle#arrow{
-    transform: rotate(90deg);
+    margin-bottom: 0;
 }
 
 #submit{
